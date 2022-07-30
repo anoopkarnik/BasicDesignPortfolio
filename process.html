@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:Light' rel='stylesheet' type='text/css'>
+<head style = "font-family:Montserrat Light">
+<nav class="w3-bar" style="color:#54c3a3;background-color:black";>
+  <a href="#logo" class="w3-bar-item"><img src="images/logo.png" style="width:150px;height:40px" ></a>
+  <a href="coop.html" class="w3-button w3-bar-item w3-xlarge w3-right" >Cooperative Society</a>
+  <a href="map.html" class="w3-button w3-bar-item w3-xlarge w3-right">Map</a>
+  <a href="products.html" class="w3-button w3-bar-item w3-xlarge w3-right" >Products</a>
+        <a href="home.html" class="w3-button w3-bar-item w3-xlarge w3-right">Home</a>
+</nav>
+<style>
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  padding:5%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  padding: 1%;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+
+<body style="font-family:montserrat";>
+  
+<div>
+
+<br><br>
+
+<div class="slideshow-container">
+  <p style="padding-left:46%;padding-right:46%;">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">  &#10095;</a>
+  </p>
+  <div class="mySlides fade"> <img src="images/process/1.png" style="max-width: 100%;display:block;padding: 35px; " ></div>
+  <div class="mySlides fade">  <img src="images/process/2.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade"> <img src="images/process/3.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade"> <img src="images/process/4.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade"> <img src="images/process/5.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade"> <img src="images/process/6.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade"> <img src="images/process/7.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade">  <img src="images/process/8.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade">  <img src="images/process/9.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade"> <img src="images/process/10.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade">  <img src="images/process/11.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade">  <img src="images/process/12.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+  <div class="mySlides fade">  <img src="images/process/13.png" style="  max-width: 100%;display:block;padding: 35px;" ></div>
+</div>
+  
+
+
+	</div>
+	<br>	<br>	<br>
+</div>
+	
+	<!-- Footer -->
+<footer class="w3-container w3-center w3-black w3-xlarge" style ="font-family: sans-serif";>
+  <p class="w3-medium">
+  Study and survey of the Craft and Documentation <br>
+Name of the students : Bidyut Bera, Lokesh M.R., Mary Ghosh, Prerna Kolluri, Sarita, Sreeparvathy, Varsha S.<br>
+	 Centre name : Chennai <br>
+	  
+Copyright © National Institute of Fashion Technology, Year 2019 <br>
+All rights reserved: No part of this book may be reproduced, stored in retrieval system or
+transmitted in any form by means of electronic, mechanical, photocopying, recording or
+otherwise without prior permission from National Institute of Fashion Technology, except by
+a review/reader who wishes to quote brief passage in connection with a paper review/essay
+written for inclusion in a periodical, newspaper or broadcast.
+  </p>
+</footer>
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	
+</body>
+</html>
